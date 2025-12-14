@@ -1,0 +1,247 @@
+# ══════════════════════════════════════════════════════════════════════════════
+# HUGO BLOX CONFIGURATION
+# Schema: hugoblox.com/schema/v2
+# Tutorial: https://docs.hugoblox.com/tutorial/
+# Documentation: https://docs.hugoblox.com/
+# ══════════════════════════════════════════════════════════════════════════════
+hugoblox:
+    schema: "2.0"
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # IDENTITY
+    # Site-level branding (for people/profiles, use the author system in content/authors/)
+    # ────────────────────────────────────────────────────────────────────────────
+    identity:
+        # Site name - shown in navbar, footer, copyright, and browser title by default
+        name: "filaco.dev"
+        # Legal entity for copyright notices (defaults to name if not set)
+        organization: ""
+        # Schema.org type for structured data
+        type: person # person | organization | local_business
+        # Short tagline displayed on your site
+        tagline: "Software Engineer | Huawei CRC"
+        # Site meta description for search engines and social sharing
+        description: "Software engineer with a passion for technology and innovation."
+        # Social accounts (used for meta tags like Twitter Cards)
+        social:
+            # twitter: "BuildLore" # Twitter/X handle for Twitter Cards (without @)
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # THEME
+    # Color and visual design system
+    # ────────────────────────────────────────────────────────────────────────────
+    theme:
+        # Mode: 'light', 'dark', or 'system' (follows OS preference)
+        mode: system
+        # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
+        pack: "default"
+        # Optional: Override theme pack colors
+        colors:
+            primary: "" # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
+            secondary: ""
+            neutral: "" # Affects gray utilities (text-gray-*, bg-gray-*)
+        # Optional: Mode-specific color overrides
+        colors_light: {}
+        colors_dark: {}
+        # Optional: Semantic surface color overrides
+        surfaces:
+            background: ""
+            foreground: ""
+            header:
+                background: ""
+                foreground: ""
+            footer:
+                background: ""
+                foreground: ""
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # TYPOGRAPHY
+    # Font and text sizing
+    # ────────────────────────────────────────────────────────────────────────────
+    typography:
+        # Font: 'sans' (Inter), 'serif' (Roboto Slab), or 'native' (system fonts)
+        font: "native"
+        # Size: 'sm', 'md', 'lg', or 'xl' (affects base font size and scale)
+        size: "md"
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # LAYOUT
+    # Spacing and shape tokens
+    # ────────────────────────────────────────────────────────────────────────────
+    layout:
+        # Border radius: 'none', 'sm', 'md', 'lg', or 'full'
+        radius: "md"
+        # Spacing density: 'compact', 'comfortable', or 'spacious'
+        spacing: "comfortable"
+        # Avatar shape in author profiles
+        avatar_shape: circle # circle | square | rounded
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # HEADER
+    # Site header and navigation bar
+    # ────────────────────────────────────────────────────────────────────────────
+    header:
+        enable: true
+        # Header style variant
+        style: navbar # navbar | navbar-simple | minimal
+        # Stick to top on scroll
+        sticky: true
+        # Menu alignment
+        align: right # left | center | right
+        # Feature toggles
+        search: true
+        theme_toggle: true
+        theme_picker: false
+        language_switcher: true
+        # Call-to-action button
+        cta:
+            enable: false
+            text: ""
+            url: ""
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # FOOTER
+    # Site footer
+    # ────────────────────────────────────────────────────────────────────────────
+    footer:
+        # Footer style variant
+        style: minimal # minimal | columns | centered
+        language_switcher: true
+        # Custom footer text (HTML supported)
+        text: ""
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # COPYRIGHT
+    # Legal notices and licensing
+    # ────────────────────────────────────────────────────────────────────────────
+    copyright:
+        # Copyright notice - supports {year}, {name}, {license} placeholders
+        notice: "© {year} {name}. This work is licensed under MIT"
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # SEO
+    # Search engine optimization - overrides and technical settings
+    # ────────────────────────────────────────────────────────────────────────────
+    seo:
+        # AI/LLM crawler guidance (llms.txt)
+        ai:
+            allow:
+                - /
+            disallow: []
+            note: "Guidance for AI crawlers - customize to match your public content."
+            contact: ""
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # CONTENT
+    # Content rendering and behavior
+    # ────────────────────────────────────────────────────────────────────────────
+    content:
+        # Math rendering
+        math:
+            enable: true
+        # Table of contents
+        toc:
+            enable: true
+        # Reading time estimates
+        reading_time:
+            enable: true
+        # Academic citations
+        citations:
+            style: ieee # apa | mla | chicago | ieee
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # SEARCH
+    # Site search
+    # ────────────────────────────────────────────────────────────────────────────
+    search:
+        enable: true
+        # Trending/suggested search terms
+        suggestions: []
+        # Quick action shortcuts in search modal
+        quick_actions: []
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # COMMENTS
+    # User comments system
+    # ────────────────────────────────────────────────────────────────────────────
+    comments:
+        enable: false
+        provider: "giscus" # giscus | disqus
+        giscus:
+            repo: ""
+            repo_id: ""
+            category: ""
+            category_id: ""
+        disqus:
+            shortname: ""
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # REPOSITORY
+    # Source code repository for "Edit this page" links
+    # ────────────────────────────────────────────────────────────────────────────
+    repository:
+        enable: true
+        url: "https://github.com/FilaCo/filaco" # e.g., https://github.com/username/repo
+        branch: master
+        content_dir: content
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # LOCALE
+    # Regional formatting preferences
+    # ────────────────────────────────────────────────────────────────────────────
+    locale:
+        date_format: "Jan 2, 2006" # Go time format
+        time_format: "3:04 PM"
+        address_format: en-us
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # SECURITY
+    # Security headers and policies (requires blox-plugin-netlify)
+    # ────────────────────────────────────────────────────────────────────────────
+    # security:
+    #     csp:
+    #         policy: ""
+    #         report_only: false
+    #     frame_options: deny # deny | sameorigin | allow
+    #     permissions_policy: ""
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # PRIVACY
+    # Privacy and compliance features
+    # ────────────────────────────────────────────────────────────────────────────
+    privacy:
+        enable: true
+        anonymize_analytics: true
+        # cookie_consent:
+        #     enable: true
+        #     content:
+        #         message: "This website uses cookies to enhance your experience."
+        #         dismiss: "Got it!"
+        #         link: "Learn more"
+        #         href: "/privacy/"
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # DEBUG
+    # Development and debugging (hidden in production)
+    # ────────────────────────────────────────────────────────────────────────────
+    debug:
+        enable: false
+        hud:
+            position: bottom-left # top-left | top-right | bottom-left | bottom-right
+            opacity: 1.0
+        export_logs: true
+
+    # ────────────────────────────────────────────────────────────────────────────
+    # PRO
+    # Pro subscription features and affiliate program
+    # ────────────────────────────────────────────────────────────────────────────
+    pro:
+        # Hide "Powered by HugoBlox" attribution
+        # Requires: Pro subscription to support HugoBlox via alternative means
+        # Note: Even with Pro, you can keep this false to support open source!
+        # Get Pro: https://hugoblox.com/pro
+        hide_attribution: false
+
+        # Affiliate referral code for rewards program
+        # Join affiliate program: https://hugoblox.com/affiliates
+        affiliate_code: ""

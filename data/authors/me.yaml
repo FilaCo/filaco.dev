@@ -1,0 +1,125 @@
+schema: hugoblox/author/v1
+slug: me
+is_owner: true
+name:
+    display: FilaCo
+    given: Dmitrii
+    family: Chizha
+status:
+    icon: "👾"
+role: Software Engineer
+bio: >
+    I am currently Software Engineer at Huawei CRC where I am developing Cangjie programming language.
+affiliations:
+    - name: Huawei CRC
+      url: https://huawei.ru/
+links:
+    - icon: at-symbol
+      url: mailto:me@filaco.dev
+      label: E-mail Me
+    - icon: brands/telegram
+      url: https://t.me/FilaCo
+    - icon: brands/github
+      url: https://github.com/FilaCo
+    - icon: brands/linkedin
+      url: https://www.linkedin.com/in/filaco
+    - icon: brands/instagram
+      url: https://www.instagram.com/flc159
+education:
+    - degree: BSc Software Engineering
+      institution: National Research University Higher School of Economics (Higher School of Economics/HSE)
+      start: 2017-09-01
+      end: 2021-06-30
+      summary: |
+          GPA: 7.46/10.0
+
+          Courses included:
+            - Software Systems Architecture Design
+            - Operating systems
+            - General Management and Decision Making
+
+          Graduation thesis:
+            - Development of a Web-Camera Video Compression Application with Variable Rate
+
+experience:
+    - role: Senior Software Engineer
+      org: Huawei CRC
+      start: 2024-12-11
+      summary: |
+          Responsibilities include:
+          - Developing and maintaining Cangjie's Objective-C interoperability feature
+          - Developing and maintaining Cangjie's unit testing framework
+    - role: Senior Software Engineer
+      org: VK
+      start: 2024-05-01
+      end: 2025-11-30
+      summary: |
+          Responsibilities include:
+          - Developing and maintaining VK Messenger API (web, iOS, Android, desktop), messages.* API
+          section.
+          - Developing and maintaining group-based channels feature, channels.* API section.
+    - role: Team Lead
+      org: VK
+      start: 2023-07-01
+      end: 2024-05-20
+      summary: |
+          Responsibilities include:
+          - Developing and maintaining group-based channels feature, channels.* API section.
+          - Leading a team of 7 backend engineers (facilitating communication, resolving conflicts, and ensuring project success).
+          - Evolving software development culture.
+    - role: Software Engineer
+      org: VK
+      start: 2022-08-09
+      end: 2023-06-30
+      summary: |
+          Responsibilities include:
+          - Developing and maintaining VK Messenger API (web, iOS, Android, desktop), messages.* API
+          section.
+          - Designing and developing group-based channels feature, channels.* API section.
+    - role: Software Engineer
+      org: VK
+      start: 2022-03-01
+      end: 2023-08-08
+      summary: |
+          Responsibilities include:
+          - Developing and maintaining VK Music infrastructure.
+          - Developing and maintaining "Feed" processing.
+            "Feed" is a hub, which collects all data from various sources
+            (music vendors, government, etc.) and handles it.
+    - role: Lead Developer
+      org: X5 Retail Group
+      start: 2021-09-01
+      end: 2022-03-01
+      summary: |
+          Responsibilities include:
+          - Developing and maintaining https://vprok.ru backoffice.
+          - Designed and developed BFF (Backend-For-Frontend) that allows migrating backoffice server
+          app from monolith structure to a microservice one.
+    - role: Backend Developer
+      org: Xsolla Inc.
+      start: 2020-01-01
+      end: 2021-08-01
+      summary: |
+          Responsibilities include:
+          - Developing and maintaining  publisher.xsolla.com (merchant personal account) server
+            application.
+          - Designed and developed the notification system for potential hazardous settings
+          changing.
+          - Contributed to evolving software design culture, especially quality assurance of software,
+          gave internal lectures.
+
+skills:
+    - name: Tech
+      items:
+          - label: Rust
+            level: 4
+          - label: Cangjie
+            level: 4
+          - label: C/C++
+            level: 3
+
+languages:
+    - name: Russian
+      level: 5
+    - name: English
+      level: 4
