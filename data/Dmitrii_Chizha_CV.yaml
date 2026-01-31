@@ -50,7 +50,7 @@ cv:
                   - Developing and maintaining VK Music infrastructure.
                   - Developing and maintaining “Feed” processing. “Feed” is a hub, which collects all data from various sources (music vendors, government, etc.) and handles it.
                   - Developing and maintaining VK Messenger API (web, iOS, Android, desktop), messages.* API section.
-                  - Designing and developing group-based channels feature, channels.* API section.
+                  - Designing and developing group-based channels feature, channels. API section.
                   - 2023-2024 I was leading a team of 7 backend engineers (facilitating communication, resolving conflicts, and ensuring project success).
             - company: X5 Tech
               position: Lead Developer
